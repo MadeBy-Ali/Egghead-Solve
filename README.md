@@ -4,7 +4,7 @@
 
 Technical test to identify and fix the broken filter on https://www.ouerestaurants.com/private-events
 
-## 🐛 Problem Identified
+## Problem Identified
 
 The original website uses **Finsweet CMS Filter** but has a critical bug:
 
@@ -21,7 +21,7 @@ The original website uses **Finsweet CMS Filter** but has a critical bug:
 
 ## ✅ Solution
 
-Created a fixed version with working client-side filtering:
+Created my own fixed version with working client-side filtering:
 
 **File:** `index-fixed.html` (with `styles-fixed.css` and `script-fixed.js`)
 
@@ -77,7 +77,3 @@ sittingMatch && standingMatch && areaMatch && amenitiesMatch
 | Filters working | ❌ Broken | ✅ Working |
 | External dependencies | Finsweet CMS Filter | ✅ None |
 | Filter logic | ❌ Unclear | ✅ Clear AND logic |
-
-## 🌐 Deployment
-
-See `FIREBASE-HOSTING-GUIDE.md` for hosting instructions.
