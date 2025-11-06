@@ -1,0 +1,393 @@
+/* OUE Restaurants Private Events - Fixed Filter Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #00BFA5;
+}
+
+/* Hero */
+.hero-event {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-event h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+}
+
+.hero-event p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+/* Filters */
+.filters-area {
+    background-color: white;
+    padding: 50px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.filter-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00BFA5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.filter-item label:first-child {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+.slider-wrapper {
+    padding: 10px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #00BFA5;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #00BFA5;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.slider-value {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00BFA5;
+    font-weight: 600;
+}
+
+.checkbox-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.checkbox-filters label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.checkbox-filters label:hover {
+    color: #00BFA5;
+}
+
+.checkbox-filters input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #00BFA5;
+}
+
+/* Venues */
+.venues-list {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.venues-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 40px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.event-card.hidden {
+    display: none;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.event-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 30px;
+}
+
+.event-details h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.room-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00BFA5;
+    margin-bottom: 20px;
+}
+
+.capacity-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.capacity-info div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.capacity-info img {
+    width: 20px;
+    height: 20px;
+}
+
+.area-sqft {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.amenities-list span {
+    padding: 5px 12px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+}
+
+.amenities-list .no-amenity {
+    color: #999;
+    font-style: italic;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.enquiry-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #00BFA5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.enquiry-btn:hover {
+    background: #00A890;
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.no-results img {
+    width: 120px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.no-results p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer strong {
+    color: #00BFA5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .hero-event h1 {
+        font-size: 36px;
+    }
+
+    .filters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .venues-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-card {
+    animation: fadeIn 0.4s ease;
+}

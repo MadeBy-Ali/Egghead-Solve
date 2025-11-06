@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Events - OUE Restaurants (FIXED)</title>
+    <link rel="stylesheet" href="styles-fixed.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>OUE RESTAURANTS</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home">Concepts</a>
+                <a href="#about">About</a>
+                <a href="#careers">Careers</a>
+                <a href="#private-events" class="active">Private Events</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-event">
+            <div class="container">
+                <h1>Private Events</h1>
+                <p>Reserve a private dining room or host a bespoke event in our elegant spaces, tailored with amenities and flexible options for every occasion.</p>
+            </div>
+        </section>
+
+        <section class="filters-area">
+            <div class="container">
+                <div class="filter-header">
+                    <img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c291b8da35f51ce7eb2c61_4364da64f9d9b495af29636cc3eee59d_filter.svg" alt="Filter icon" class="filter-icon">
+                    <h2>Filters</h2>
+                </div>
+
+                <div class="filters-grid">
+                    <div class="filter-item">
+                        <label>Event Size (Sitting)</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="sitting-slider" min="1" max="125" value="1" step="1">
+                            <div class="slider-value"><span id="sitting-display">1</span>+ guests</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-item">
+                        <label>Event Size (Standing)</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="standing-slider" min="1" max="200" value="1" step="1">
+                            <div class="slider-value"><span id="standing-display">1</span>+ guests</div>
+                        </div>
+                    </div>
+
+                    <div class="filter-item">
+                        <label>Area</label>
+                        <div class="checkbox-filters">
+                            <label>
+                                <input type="checkbox" value="Indoor" class="area-filter">
+                                <span>Indoor</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Outdoor" class="area-filter">
+                                <span>Outdoor</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-item">
+                        <label>Amenities</label>
+                        <div class="checkbox-filters">
+                            <label>
+                                <input type="checkbox" value="Wi-Fi" class="amenity-filter">
+                                <span>Wi-Fi</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="AC" class="amenity-filter">
+                                <span>AC</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="AV" class="amenity-filter">
+                                <span>AV</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="TV" class="amenity-filter">
+                                <span>TV</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" value="KTV" class="amenity-filter">
+                                <span>KTV</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="venues-list">
+            <div class="container">
+                <div id="venues-container" class="venues-container">
+                    
+                    <div class="event-card" data-sitting="86" data-standing="150" data-area="Indoor" data-amenities="Wi-Fi,AC,AV,TV">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/68da65a24d7c2203305cc642_highhouse_L62.JPG" alt="HighHouse L62" class="event-img">
+                        <div class="event-details">
+                            <h3>HighHouse</h3>
+                            <p class="room-name">L62</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>150</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>86</span></div>
+                            </div>
+                            <p class="area-sqft">Indoor | 5445 sqft</p>
+                            <div class="amenities-list">
+                                <span>Wi-Fi</span>
+                                <span>AC</span>
+                                <span>AV</span>
+                                <span>TV</span>
+                            </div>
+                            <p class="description">Singapore's highest lounge with skyline views.</p>
+                            <a href="mailto:hello@highhouse.sg" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-sitting="76" data-standing="120" data-area="Indoor" data-amenities="Wi-Fi,AC,AV,TV">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/68da65903a50069bf96c2c93_highhouse_L61.JPG" alt="HighHouse L61" class="event-img">
+                        <div class="event-details">
+                            <h3>HighHouse</h3>
+                            <p class="room-name">L61</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>120</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>76</span></div>
+                            </div>
+                            <p class="area-sqft">Indoor | 4855 sqft</p>
+                            <div class="amenities-list">
+                                <span>Wi-Fi</span>
+                                <span>AC</span>
+                                <span>AV</span>
+                                <span>TV</span>
+                            </div>
+                            <p class="description">Singapore's highest lounge with skyline views.</p>
+                            <a href="mailto:hello@highhouse.sg" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-sitting="12" data-standing="30" data-area="Indoor" data-amenities="AC">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/6909c97b593a84e5e2b398c0_Iyasaka%20by%20Hashida.jpg" alt="Iyasaka" class="event-img">
+                        <div class="event-details">
+                            <h3>Iyasaka</h3>
+                            <p class="room-name">Full Venue Bookout</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>30</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>12</span></div>
+                            </div>
+                            <p class="area-sqft">Indoor | 0 sqft</p>
+                            <div class="amenities-list">
+                                <span>AC</span>
+                            </div>
+                            <p class="description">A modern Japanese retreat with crafted omakase flair.</p>
+                            <a href="mailto:info@hashidasg.com" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-sitting="52" data-standing="100" data-area="Outdoor" data-amenities="Wi-Fi,AV">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/68da65f90a6ca91a52918e8b_nova_lower_deck.jpg" alt="Nova Lower Deck" class="event-img">
+                        <div class="event-details">
+                            <h3>Nova</h3>
+                            <p class="room-name">Lower Deck</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>100</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>52</span></div>
+                            </div>
+                            <p class="area-sqft">Outdoor | 3219 sqft</p>
+                            <div class="amenities-list">
+                                <span>Wi-Fi</span>
+                                <span>AV</span>
+                            </div>
+                            <p class="description">Singapore's highest rooftop bar with 360° city skyline views.</p>
+                            <a href="mailto:hello@novabar.sg" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-sitting="100" data-standing="200" data-area="Outdoor" data-amenities="Wi-Fi,AV">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/68da65e59e01a80e4d9b99ac_nova_upper_deck.jpg" alt="Nova Upper Deck" class="event-img">
+                        <div class="event-details">
+                            <h3>Nova</h3>
+                            <p class="room-name">Upper Deck</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>200</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>100</span></div>
+                            </div>
+                            <p class="area-sqft">Outdoor | 4758 sqft</p>
+                            <div class="amenities-list">
+                                <span>Wi-Fi</span>
+                                <span>AV</span>
+                            </div>
+                            <p class="description">Singapore's highest rooftop bar with 360° city skyline views.</p>
+                            <a href="mailto:hello@novabar.sg" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-sitting="60" data-standing="150" data-area="Indoor" data-amenities="AC,AV">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/68da63dfb9cebe7ec7b73cc5_vue_main_dining_hall.jpg" alt="VUE Main Dining Room" class="event-img">
+                        <div class="event-details">
+                            <h3>VUE</h3>
+                            <p class="room-name">Main Dining Room</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>150</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>60</span></div>
+                            </div>
+                            <p class="area-sqft">Indoor | 1797 sqft</p>
+                            <div class="amenities-list">
+                                <span>AC</span>
+                                <span>AV</span>
+                            </div>
+                            <p class="description">A sophisticated venue showcasing skyline dining artistry.</p>
+                            <a href="mailto:dining@vue.com.sg" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-sitting="30" data-standing="30" data-area="Indoor,Outdoor" data-amenities="">
+                        <img src="https://cdn.prod.website-files.com/67ad9f723f9594c1a78d5448/68da6474bcd88096a5631964_vue_alfresco%20bar.jpg" alt="VUE Alfresco Bar" class="event-img">
+                        <div class="event-details">
+                            <h3>VUE</h3>
+                            <p class="room-name">Alfresco Bar</p>
+                            <div class="capacity-info">
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98331c1f09ee83c676_standing.svg" alt="Standing"> <span>30</span></div>
+                                <div><img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68c24b98be6ebd57b87dd652_sitting.svg" alt="Sitting"> <span>30</span></div>
+                            </div>
+                            <p class="area-sqft">Indoor | Outdoor | 837 sqft</p>
+                            <div class="amenities-list">
+                                <span class="no-amenity">No amenities listed</span>
+                            </div>
+                            <p class="description">A sophisticated venue showcasing skyline dining artistry.</p>
+                            <a href="mailto:dining@vue.com.sg" class="enquiry-btn">Send Enquiry</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="no-results" class="no-results" style="display: none;">
+                    <img src="https://cdn.prod.website-files.com/67860265d21837568c99de5f/68a446c576c8833347a60e17_no-result.svg" alt="No results">
+                    <p>No results found</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 OUE Restaurants. All rights reserved. | <strong>FIXED FILTERING VERSION</strong></p>
+        </div>
+    </footer>
+
+    <script src="script-fixed.js"></script>
+</body>
+</html>
