@@ -63,7 +63,7 @@ sittingMatch && standingMatch && areaMatch && amenitiesMatch
 
 ## 🚀 How to Test
 
-1. Open `index-fixed.html` in browser
+1. Open `[index-fixed.html](https://oue-events-fixed.web.app/)` in browser
 2. Move sliders - venues filter by capacity
 3. Check Area boxes - filter Indoor/Outdoor
 4. Check Amenities - only venues with ALL selected amenities show
