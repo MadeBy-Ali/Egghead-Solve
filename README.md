@@ -23,7 +23,14 @@ The original website uses **Finsweet CMS Filter** but has a critical bug:
 
 Created my own fixed version with working client-side filtering:
 
-**File:** `index-fixed.html` (with `styles-fixed.css` and `script-fixed.js`)
+---
+
+## 🚀 Live Fixed Version
+
+🟢 **Deployed App:** [https://oue-events-fixed.web.app/](https://oue-events-fixed.web.app/)  
+✅ **Status:** Working perfectly with functional client-side filtering.
+
+---
 
 ### Key Changes:
 1. **Removed broken Finsweet dependency** - Built custom vanilla JS filter
